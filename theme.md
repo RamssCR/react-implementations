@@ -66,6 +66,7 @@ import { ThemeContext } from '@contexts/ThemeContext'
  * @param {object} props - las propiedades del provider.
  * @param {import('react').ReactNode} props.children - Un nodo de react.
  * @returns {import('react').JSX.Element} El provider con las funcionalidades
+ */
 export const ThemeProvider = ({ children }) => {
   const [theme, setTheme] = useState(() => localStorage.getItem('theme') ?? 'light')
 
